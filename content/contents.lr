@@ -2,5 +2,16 @@ title: Welcome to myFantasticWebsiteThing!
 ---
 body:
 
-This is a basic demo website that shows how to use Lektor for a basic
-website with some pages and a blog.
+***
+
+This title is H1
+================
+
+This title is H2
+----------------
+
+### This title is H3
+
+This is a website that was made with the Lektor quickstart.
+
+And it does not contain a lot of information.

@@ -1,5 +1,39 @@
+:root {
+  --ts-purple: #903bda;
+  --ts-white:  #FFFFFF;
+  --ts-black:  #000000;
+}
+
+@font-face {
+  font-family: "Puffling V03";
+  font-style: normal;
+  src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/puffling/Puffling_latest.woff2') format('woff2');
+}
+
+/*PIGEONETTE/*
+/* Regular */
+@font-face {
+  font-family: "Pigeonette";
+  font-style: normal; /* Regular style */
+  src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/pigeonette/Pigeonette_V01-Regular.woff2') format('woff2');
+}
+/* Bold */
+@font-face {
+  font-family: "Pigeonette";
+  font-style: bold;
+  src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/pigeonette/Pigeonette_V01-Bold.woff2') format('woff2');
+}
+/* Italic */
+@font-face {
+  font-family: "Pigeonette";
+  font-style: italic;
+  src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/pigeonette/Pigeonette_V01-Italic.woff2') format('woff2');
+}
+
+
 body {
-    font-family: 'Verdana', sans-serif;
+    /* font-family: "Pigeonette", sans-serif;
+    font-style: normal; */
     margin: 50px 25px;
 }
 
