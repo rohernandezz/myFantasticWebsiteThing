@@ -20,7 +20,7 @@ hr {
     grid-template-columns: 100%;
     margin: 0 15%;
     padding:2rem;
-    height: 80vh;
+    height: 100vh;
 }
 
 .invoice-header{
