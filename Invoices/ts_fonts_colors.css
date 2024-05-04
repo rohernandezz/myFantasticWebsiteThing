@@ -1,0 +1,34 @@
+/* tsFonts */
+
+@font-face {
+    font-family: "Puffling";
+    font-style: normal;
+    font-weight: normal;
+    src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/puffling/Puffling_latest.woff2') format('woff2');
+  }
+  
+@font-face {
+    font-family: "Outpact";
+    font-style: normal;
+    font-weight: normal;
+    font-variation-settings: 'wgth'1000,'slnt'500; /* 👈🏼Change  to 'wght later' */
+    src: url('https://cdn.jsdelivr.net/gh/tortillaStudio/stuff/f_dev/Outpact/Outpact-Thin.woff2') format('woff2');
+  }
+
+    /* pkColor */
+
+:root {
+    --pkRed:    #FF3131;
+    --pkOrange: #2a1b0d;
+    --pkYellow: #FFE100;
+    --pkGreen:  #00C26E;
+    --pkBlue:   #0894FF;
+    --pkViolet: #9749E5;
+    --pkPurple: var(--pkViolet); /* Same color as pkViolet */
+    --pkWhite:  #FFFFFF;
+    --pkTBlue:  #62E2FF;
+    --pkTPink:  #FFB0E5;
+    --pkBrown: #7D3230;
+    --pkTBrown:  var(--pkTBrown); /* Same color as pkBrown */
+    --pkBlack: black;
+  }

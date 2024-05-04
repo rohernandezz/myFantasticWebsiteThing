@@ -1,0 +1,70 @@
+body{
+    font-family: 'Outpact';
+}
+
+hr {
+    height: 2px; /* Set the height of the horizontal rule */
+    background-color: black;
+}
+
+
+.site-background  {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--pkRed);
+}
+
+.main-grid {
+    background-color: var(--pkWhite);
+    display:grid;
+    grid-template-columns: 100%;
+    margin: 0 15%;
+    padding:2rem;
+    height: 80vh;
+}
+
+.invoice-header{
+    font-variation-settings: 'slnt'200;
+}
+
+.invoice-footer{
+    text-align: center;
+}
+
+
+.invoice-datos {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.grid__img {
+    
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+
+table, th, td {
+    text-align: start;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: none solid;
+    padding:.5rem;
+    width:100%;
+  }
+
+.invoice-table tr {
+    display: grid;
+    grid-template-columns: auto 15% 15%;
+  }
+
+
+th {
+    font-variation-settings: 'wgth'500;
+    border-bottom: 1px solid;
+  }
+
+
+  
