@@ -6,6 +6,10 @@ h1,h2,h3,h4,h5,h6 {
     margin:.5rem 0;
 }
 
+.nav {
+    display: grid;
+}
+
 body{
     font-family: 'Outpact';
     min-height: 100%;
@@ -61,6 +65,10 @@ footer {
 
 .invoice-header{
     font-variation-settings: 'slnt'200;
+}
+
+.invoice-title{
+    text-decoration: underline;
 }
 
 .tortilla-datos{

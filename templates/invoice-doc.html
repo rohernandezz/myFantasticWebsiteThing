@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+{% from "macros/invoicer.html" import render_invoice_doc %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+  <div class="site-background">
+    <div class="main-grid">
+        <div class="grid-section">    
+            <div class="invoice-header">
+              <p class="invoice-date">{{ this.invoice_date }}</p>
+                Invoice {{ this.invoice_code }}<br>
+                <div class="invoice-title">{{ this.title }}
+                <hr>
+            </div>
+            <div class="invoice-datos">
+                <div class="tortilla-datos">
+                    <p>
+                        <p>
+                            <h3>Tortilla.studio</h3>
+                            <strong>Romina Hernández</strong><br>
+                            asd<br>
+                            asdasdasd<br>
+                            asdasdasd<br>
+                        </p>
+                        <p>
+                            <strong>Billing data</strong><br>
+                            asdasdasd<br>
+                            asdasdasd<br>
+                            asdasdasd<br>
+                        </p>
+                    </p>
+
+                </div>
+                <div class="clientx-datos">
+                    <p>
+                        <h3> Bill to:</h3>
+                        <strong>{{ this.bill_to }}</strong><br>
+                        asdasdasdasfas<br>
+                        ads<br>
+                        dasd<br>
+                    </p>
+                </div>
+            </div>
+            <div class="invoice-body">
+                <hr>
+                    {{ this.body }}
+                <hr>
+                <p>
+                <h4>Terms of Invoice:</h4>
+                {{ this.invoice_terms }}
+                </p>
+                <p><i>Please send remittance to finanzas@tortilla.studio</i></p>
+            </div>
+        </div>
+        <footer class="invoice-footer">
+                <div class="centered-image">
+                    <img class="footer-logo" src="/invoicer/tortilla_logo.png" alt="static/invoicer/Tortilla.studio<br>Be gay. Make type">
+                </div>
+            <h4>tortilla.studio</h4>
+            hola@tortilla.studio
+        </footer>
+    </div>
+</div>
+{% endblock %}

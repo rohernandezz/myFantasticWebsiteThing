@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% block title %}Welcome{% endblock %} — myFantasticWebsiteThing</title>
+    <title>{% block title %}Welcome{% endblock %} — tortilla.Invoicer</title>
     <link href="/static/normalize.css" rel="stylesheet">
     <link href="/static/ts_fonts_colors.css" rel="stylesheet">
     <link href="/static/style.css" rel="stylesheet">
@@ -12,14 +12,14 @@
 
 <body>
   <header>
-    <h1>myFantasticWebsiteThing</h1>
+    <h2>tortilla.Invoicer</h2>
     <nav>
       <ul class="nav navbar-nav">
         <li{% if this._path == '/' %} class="active"{% endif
           %}><a href="{{ '/'|url }}">Home</a></li>
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/about', 'About']
+          ['/invoicer', 'Invoicer'],
+          ['/info', 'Info']
         ] %}
         <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>
@@ -30,8 +30,4 @@
   <div class="page">
     {% block body %}{% endblock %}
   </div>
-  <footer>
-    &copy; Copyright 2024 by Ro.
-  </footer>
-  {# <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> #}
 </body>

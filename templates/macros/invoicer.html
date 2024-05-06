@@ -1,0 +1,14 @@
+{% macro render_invoice_doc(post, from_index=false) %}
+  <div class="invoice-doc">
+  {% if from_index %}
+    <h2><a href="{{ post|url }}">👉🏼 {{ post.title }}</a></h2>
+  {% else %}
+    <h2>{{ post.title }}</h2>
+  {% endif %}
+  <p class="meta">
+    Client: 
+    <strong>{{ post.bill_to }}</strong>
+    on {{ post.invoice_date }}
+  </p>
+  </div>
+{% endmacro %}
