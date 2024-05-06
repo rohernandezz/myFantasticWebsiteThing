@@ -2,9 +2,18 @@ html{
     height: 100%;
 }
 
+h1,h2,h3,h4,h5,h6 {
+    margin:.5rem 0;
+}
+
 body{
     font-family: 'Outpact';
     min-height: 100%;
+    line-height: 1.25rem;
+}
+
+strong{
+    text-decoration: underline;
 }
 
 hr {
@@ -12,6 +21,14 @@ hr {
     background-color: var(--pkBlack);
 }
 
+
+h3{
+    font-variation-settings: "wgth" 660;
+}
+
+h4{
+    font-variation-settings: "wgth" 500;
+}
 
 .site-background  {
     width: 100vw;
@@ -36,7 +53,6 @@ footer {
     margin-top: auto; /* Sticks footer to bottom of page */
 }
 
-
 .grid-section {
     grid-column:main;
     grid-row: main
@@ -47,16 +63,26 @@ footer {
     font-variation-settings: 'slnt'200;
 }
 
+.tortilla-datos{
+    grid-column: tortilla;
+}
+
+.invoice-date{
+    text-align: end;
+}
+
 .invoice-footer{
     text-align: center;
 }
-
-
 .invoice-datos {
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 65% 35%; */
+    grid-template-columns: [tortilla-start] 65% [tortilla-end billTo-start] 35% [billTo-end];
 }
 
+.cliente-datos{
+    grid-column: billTo;
+}
 
 .footer-logo {
     width: 80px;
