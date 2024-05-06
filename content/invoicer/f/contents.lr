@@ -1,0 +1,21 @@
+title: TestInvoice
+---
+invoice_code:
+
+tST-TEST-069
+invoice_date: 2021-05-02
+---
+body:
+
+| Concept | Quantity | Cost |
+|----------|----------|----------|
+| Appearance in panel | 1 | $100 |
+| Immortal soul | 666 | $66.6666 |
+| Toothpaste | 2 | $33.24 |
+
+---
+bill_to: testClientName
+---
+invoice_terms:
+
+**testInvoiceTerms:** Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor malesuada velit. Donec et dictum ligula. Sed erat elit, fermentum a volutpat sit amet, dignissim eu dui. Cras suscipit sodales suscipit. Vestibulum placerat vitae sem dapibus tempus. 
